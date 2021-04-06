@@ -8,6 +8,9 @@
     <title>Document</title>
     {% load static %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.5.0/frappe-gantt.min.js" integrity="sha512-5M8ejeX3DuiV4VGIFjHP5gpryPQb1dWYjzTUhBUKj81aT6ZZz6+wIG8k89nbjsiHFJHQbi/CByHQTe4mJOi3hw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.5.0/frappe-gantt.css" integrity="sha512-qxE5FnEACGZSuLsbaDLCYuMRrxuLhQz1HtOJ2+3dHXSnFlckToa1rXHajkgLciNSdq+FCE4ey8R8fqjrD3HO0g==" crossorigin="anonymous" />
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}" />
 
@@ -16,10 +19,11 @@
 <body>
     <div id="main">
         <div id="app"></div>
-    </div>
+    </div> 
 
     <script src="{% static "frontend/main.js" %}"></script>
     <script src="{% static 'frontend/animations.js' %}"></script>
+    
 </body>
 
 </html>
