@@ -1,144 +1,130 @@
-body { 
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-
-.forward-user-icon{
-    position: relative; 
-    left: 100px;
-    color: #0a6cce;
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.user-icon h3 {
-    font-size: 1em;
-    font-weight: normal;
+.sidebar {
+  height: 100%;
+  width: 100%;
+  top: 0;
 }
 
-.user-icon a{
-    text-decoration: none;
-    padding-right: 8px;
+.SidebarList {
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  width: 100%;
 }
-  
-.user-icon {
-    overflow: hidden;
-    padding-left: 5px;
-    margin-left: 29px;
-    color: white;
-    background-color: #26318A;
-    border-radius: 5em;
-    width: 70%;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 10px;
+
+.SidebarList .row:nth-child(5) {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 15%;
+  position: absolute;
+}
+
+.SidebarList .row:nth-child(6) {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 5%;
+  position: absolute;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 12.1090909091%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 70%;
 }
 
 /*
 #0a6cce
 */
 
-.container{
-    display: block;
-    height: 100%;
-    width: 20%;
-    background-color: #2F3AA3;
-    overflow-y: hidden;
-    border-radius: 0em 2em 2em 0em;
-    overflow-x: hidden;
-    position: fixed;
+.container {
+  display: block;
+  height: 90%;
+  bottom: 0;
+  width: 7.60869565217%;
+  background-color: white;
+  overflow-y: hidden;
+  z-index: 11;
+  overflow-x: hidden;
+  position: fixed;
 }
 
-.logo a h4{
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-    text-decoration: none;
-    color: white;
-    text-transform: none;
-    letter-spacing: 4px;
-    font-size: 1em;
-    align-items: center; 
-  }
+.container .sidebar ul li #title {
+  display: none;
+}
+
+.container li {
+  align-items: center;
+}
 
 /*#6d39ac*/
 
-.side-nav-links{
-     margin-top: 7em;
-     margin-bottom: 60%;
-     padding-left: 30px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
+@media screen and (max-width: 768px) {
+  .container {
+  }
 }
 
-
-
-.side-nav-links li{
-    list-style: none;
-    text-decoration: none;
-    padding-bottom: 20%;
-}
-
-
-@media screen and (max-width:768px){
-    .container{
-        
-    }
-}
- 
-
-.link {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    
-    font-size: 14px;
-}
-
-.link:hover{
-    border-bottom: 2px white solid;
+@media screen and (max-width: 908px) {
+  .user-icon h3 {
+    display: none;
   }
 
-  @media screen and (max-width:908px){
-    .user-icon h3{
-      display: none;
-    }
-  
-    .logo a{
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 17px;
-    }
-  
-    
-    .user-icon {
-        overflow: hidden;
-        
-        margin-left: 29px;
-        color: white;
-        width: 100%;
-        box-sizing: border-box;
-        position: absolute;
-        bottom: 10px;
-    }
+  .logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 17px;
+  }
 
-    .user-icon a{
-        text-decoration: none;
-    }
-    
-  
+  .user-icon {
+    overflow: hidden;
+
+    margin-left: 29px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .user-icon a {
+    text-decoration: none;
+  }
 }
 
-
-@media only screen and (max-width: 1024px){
-    .link {
-        color: white;
-        text-decoration: none;
-        letter-spacing: 2px;
-        font-weight: bold;
-        font-size: 12px;
-    }
+@media only screen and (max-width: 1024px) {
+  .link {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+  }
 }

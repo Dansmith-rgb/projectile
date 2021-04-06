@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin: 0;
+}
+
+.card-title {
+  padding-top: 2%;
+
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  margin-left: 44%;
+  color: #404040;
+}
+
+.card-body {
+  margin: 0;
+  padding-top: 1%;
+  margin-left: 44%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+
+  color: #000000;
+}
+
+.card-image {
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+  background: #f4cc3e;
+  margin-right: 0;
+  position: absolute;
+  top: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
